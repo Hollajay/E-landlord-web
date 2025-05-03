@@ -10,12 +10,12 @@ import { SecureScreen } from "./SecureScreen"
 
 export const Home = () => {
   return (
-    <div className="relative">
+    <div className="relative text-[3AA6B9] ">
         <Nav/>
         <Hero/>
-        <Decription1/>
-        <SecureScreen />
+        <Decription1/>     
         <Decription2/>
+        <SecureScreen />
         <DownloadScreen/>
         <FAQ/>
         <Footer/>

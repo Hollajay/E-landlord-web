@@ -2,6 +2,9 @@
 
 :root {
   --bg: "#FF914C";
+  --primary: '#ff9d02';
+  --secondary: '#006A71';
+  --tertiary: '#9ACBD0'
 }
 
 @theme {

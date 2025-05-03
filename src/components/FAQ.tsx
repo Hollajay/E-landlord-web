@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaMinus, FaPlus } from "react-icons/fa6";
+import '../styles/bounce.css'
 
 interface FaqProps {
   id: number;
@@ -56,8 +58,8 @@ export const FAQ = () => {
   return (
     <div className="px-6 py-10 space-y-7">
       <div>
-        <h1 className="text-4xl font-bold">FAQs</h1>
-        <p className="text-lg">
+        <h1 className="text-4xl font-bold text-[#006A71]">FAQs</h1>
+        <p className="text-lg text-[#006A71]">
           Find answers to common questions about using the E-Landlord app
           effortlessly
         </p>
@@ -65,15 +67,30 @@ export const FAQ = () => {
 
       <div className="flex-col flex gap-8">
         {openFaq.map((data, index) => (
-          <div key={index} className="shadow-3xs rounded-lg py-4 px-2">
-            <div onClick={() => handleClick(data.id)} className="flex justify-between items-center">
-             <p className={data.open ? 'font-bold text-[#FF914C]': 'font-semibold'}>{data.question}</p>
-              <button type="button" >
-                {data.open ? "🔽" : "▶️"}
-              </button>
-            </div>
-            {data.open && <p className="text-sm font-medium mt-2">{data.answer}</p>}
-          </div>
+         <div
+         key={index}
+         className={
+           data.open
+             ? "bg-[#006A71] shadow-3xs rounded-lg py-4 px-4 transition-all duration-500"
+             : "shadow-3xs rounded-lg py-4 px-4 transition-all duration-500"
+         }
+       >
+         <div
+           onClick={() => handleClick(data.id)}
+           className="flex justify-between items-center cursor-pointer"
+         >
+           <p className={data.open ? "font-bold text-[#ff9d02]" : "font-semibold text-[#006A71]"}>
+             {data.question}
+           </p>
+           <button type="button">{data.open ? <FaMinus  color="#ff9d02"/> : <FaPlus color="#ff9d02"/>}</button>
+         </div>
+       
+         <div className={`bounce-transition ${data.open ? "open" : "closed"}`}>
+           <p className="text-sm font-medium mt-2 text-[#9ACBD0]">
+             {data.answer}
+           </p>
+         </div>
+       </div>
         ))}
       </div>
     </div>

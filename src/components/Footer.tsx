@@ -1,45 +1,24 @@
-import logo from "../assets/images/Screenshot__903_-removebg-preview.png";
+
+import Icon from "../constant/icons/Icon";
+import { Newletter } from "./Newletter";
 
 export const Footer = () => {
   return (
-    <div className="p-12 w-full">
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col gap-3">
-          <h3 className="text-2xl font-semibold">Join our newsletter</h3>
-          <p className="text-gray-400">
-            Stay updated with latest news and offers
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-3">
-          <div className="flex justify-between bg-[#FF914C] p-2 rounded-2xl">
-            <div className="">
-              <input
-                className="w-full h-full px-2  placeholder:text-white text-white font-mono outline-0 text-lg"
-                placeholder="Enter your email.."
-                type="text"
-              />
-            </div>
-            <button className="p-2 bg-white rounded-3xl text-lg font-mono hover:text-[#FF914C]">
-              Subscribe
-            </button>
-          </div>
-          <p className="text-sm font-mono text-gray-400">
-            By subscribing you agree to our Privacy Policy.
-          </p>
-        </div>
-      </div>
+    <div className="p-12 w-full bg-[#006A71] relative mt-48 rounded-t-[50px]">
+      <div className="absolute top-[-35%] left-0 w-full "><Newletter/></div>
+      
 
       <div className=" grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 w-full py-14">
-        <div className="flex">
+        <div className="flex flex-col">
           <div>
-            <img className="w-28" src={logo} alt="logo" />
+            <Icon type="logo" fill="#ff9d02" />
           </div>
+          <p className="text-[#9ACBD0]">A trusted platform for finding the perfect apartment or house, whether for a short getaway or a long-term stay. Download our app today and start your journey to your next home!</p>
           <p></p>
         </div>
 
         <div className="flex">
-          <ul>
+          <ul className="text-lg text-[#9ACBD0] space-y-3">
             <li>About us</li>
             <li>Contact Us</li>
             <li>Help Center</li>
@@ -49,7 +28,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex">
-          <ul>
+        <ul className="text-lg text-[#9ACBD0] space-y-3">
             <li>FAQ</li>
             <li>support</li>
             <li>Testimonials</li>
@@ -70,7 +49,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <p className="font-mono text-gray-400">© 2025 E-Landlord. All rights reserved.</p>
+        <p className="font-mono text-[#ff9d02]">© 2025 E-Landlord. All rights reserved.</p>
       </div>
     </div>
   );
