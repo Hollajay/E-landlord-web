@@ -78,9 +78,6 @@ export const Decription1 = () => {
      
       </div>
 
-      {/* <div>
-        <a className="text-[#FF914C]" href="">{`Learn more >>`}</a>
-      </div> */}
     </div>
   );
 };

@@ -15,3 +15,23 @@
     opacity: 0;
     transform: scaleY(0.9) rotateX(-10deg);
   }
+
+  .icon-bounce{
+    position: relative;
+    display:"inline-block";
+    transition: all 0.4s ease-in ;
+    cursor: pointer;
+  }
+  .icon-bounce:hover {
+    transform: translateY(-6px); 
+    color:#006A71;
+    background-color: #ff9d02;
+  }
+
+  .button-bounce{
+    transition: all 0.4s ease-in ;
+    cursor: pointer;
+  }
+  .button-bounce:hover {
+    transform: translateY(-6px); 
+  }

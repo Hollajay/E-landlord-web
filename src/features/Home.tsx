@@ -13,9 +13,9 @@ export const Home = () => {
     <div className="relative text-[3AA6B9] ">
         <Nav/>
         <Hero/>
-        <Decription1/>     
-        <Decription2/>
-        <SecureScreen />
+        <Decription1/>  
+        <SecureScreen />   
+        <Decription2/>   
         <DownloadScreen/>
         <FAQ/>
         <Footer/>
