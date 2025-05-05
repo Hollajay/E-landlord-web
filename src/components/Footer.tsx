@@ -7,13 +7,13 @@ import appleplay from "../assets/icon/apple (3).svg";
 
 export const Footer = () => {
   return (
-    <div className="p-12 w-full bg-[#006A71] relative mt-48 rounded-t-[50px]">
-      <div className="absolute top-[-35%] left-0 w-full ">
+    <div className="py-12 md:px-12 px-4 w-full bg-[#006A71] relative lg:mt-48 mt-44 lg:rounded-t-[50px]">
+      <div className="absolute lg:top-[-35%] top-[-17%] left-0 w-full ">
         <Newletter />
       </div>
 
       <div className=" grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 w-full py-14 ">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <div>
             <Icon type="logo" fill="#9ACBD0" />
           </div>
@@ -25,7 +25,7 @@ export const Footer = () => {
           <p></p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex lg:justify-center">
           <ul className="text-lg text-[#9ACBD0] space-y-3">
             <li>About us</li>
             <li>Contact Us</li>
@@ -35,7 +35,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex lg:justify-center">
           <ul className="text-lg text-[#9ACBD0] space-y-3">
             <li>FAQ</li>
             <li>support</li>
@@ -57,7 +57,7 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-          <div className="flex flex-col items-center justify-center gap-4 text-[#fff]">
+          <div className="flex flex-col items-start justify-center gap-4 text-[#fff]">
             <button className="bg-[#000] button-bounce gap-2 flex items-center justify-center p-2 rounded-lg h-14 ">
               <div className="">
                 <img className="w-9" src={googleplay} alt="googleicon" />
@@ -82,7 +82,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <p className="font-mono text-[#ff9d02]">
+        <p className="font-mono text-[#ff9d02] text-sm text-center">
           © 2025 E-Landlord. All rights reserved.
         </p>
       </div>

@@ -9,7 +9,6 @@
 
 @theme {
   --color-light-100: var(--bg);
-
   --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
   --shadow-3xs: 1px 4px rgb(0 0 0 / 0.05);
   --shadow-pro: 10px 6px 12px 2px rgb(154 191 128 / 0.2);

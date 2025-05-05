@@ -38,9 +38,9 @@ export const Decription1 = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col my-20 py-20 items-center justify-center gap-8 ">
-      <div className="flex items-center flex-col w-2/4 gap-4">
-        <h1 className="font-bold text-4xl text-[#006A71]">
+    <div className="w-full flex flex-col lg:my-20 py-20 items-center justify-center gap-8 ">
+      <div className="flex items-center flex-col lg:w-2/4 gap-4">
+        <h1 className="font-bold text-4xl text-[#006A71] text-center">
           Find Your Perfect Rental with Ease
         </h1>
         <p className="text-center text-[#006A71]">
@@ -49,26 +49,26 @@ export const Decription1 = () => {
         </p>
       </div>
 
-      <div className="flex w-full">
-      <div className="w-1/2 flex items-center justify-center"><div><img src={bgIcon} alt="imgdev" /></div></div>
+      <div className="flex flex-col space-y-8 lg:flex-row w-full">
+      <div className="lg:w-1/2 flex items-center justify-center px-4"><div><img src={bgIcon} alt="imgdev" /></div></div>
 
 
-        <div className="w-1/2 flex items-center justify-center ">
-          <div className=" gap-6 w-full px-20 flex-col flex  ">
+        <div className="lg:w-1/2 w-full flex items-center justify-center ">
+          <div className=" gap-6 w-full lg:px-20 px-4 flex-col flex  ">
             {perfectRental.map((data, index) => (
-              <div key={index} className=" flex items-center even:justify-end  w-full">
+              <div key={index} className=" flex items-center even:justify-end  w-full ">
 
-                <div className="bg-[#006A71] h-24 rounded-l-full w-1/3  flex justify-center items-center">
+                <div className="bg-[#006A71] lg:h-24 h-20 rounded-l-full   w-[30%] flex justify-center items-center">
 
                   <img className="h-16 w-16" src={data.icon} alt="icons" />
 
                 </div>
 
-                <div className="flex items-center justify-center p-2 flex-col w-1/2 h-24 bg-[#9ACBD0] rounded-r-full">
+                <div className="flex items-center justify-center p-2 flex-col  w-[60%] lg:h-24 h-20 bg-[#9ACBD0] rounded-r-full">
 
                   <h2 className=" font-semibold text-center ">{data.title}</h2>
 
-                  <p className="text-sm  text-[]">{data.content}</p>
+                  
 
                 </div>
               </div>
