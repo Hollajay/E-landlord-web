@@ -1,4 +1,4 @@
-import bgimg from '../assets/images/house-8571836_1280.jpg'
+import bgimg from '../assets/images/bg.jpg'
 
 export const Newletter = () => {
   return (
