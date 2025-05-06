@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 export const Nav = () => {
   return (
     <div>
-        <nav className='w-full bg-[#fff] flex justify-between items-center py-3 lg:px-8 px-4 shadow fixed top-0 left-0'>
+        <nav className='w-full bg-[#fff] flex justify-between items-center py-3 lg:px-8 px-4 shadow fixed top-0 left-0 z-40'>
            {/* <div><img className='w-28' src={logo} alt="logo" /> </div>   */}
           <div className=''><Icon fill='#006A71'  type="logo" /></div> 
 

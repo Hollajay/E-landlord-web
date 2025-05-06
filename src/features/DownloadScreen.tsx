@@ -1,9 +1,11 @@
 import googleplay from "../assets/icon/google-play (1).svg";
 import appleplay from "../assets/icon/apple (3).svg";
+import Icon from "../constant/icons/Icon";
 
 export const DownloadScreen = () => {
   return (
-    <div className="bg-[#9ACBD0]  lg:m-6 m-4 lg:py-24 lg:px-8 p-4 rounded-2xl flex flex-col items-center justify-center gap-3">
+    <div className="bg-[#9ACBD0]  lg:m-6 m-4 lg:py-24 lg:px-8 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 relative 
+    ">
       <h1 className="text-4xl font-bold text-[#006A71] text-center">
         Download the E-landlord App
       </h1>
@@ -31,6 +33,13 @@ export const DownloadScreen = () => {
             <p className="text-2xl">App Store</p>
           </div>
         </button>
+      </div>
+
+      <div className="absolute top-[20%] right-5">
+        <Icon type="twist" fill="#fefefe"/>
+      </div>
+      <div className="absolute bottom-[10%] left-5">
+        <Icon type="twist" fill="#fefefe"/>
       </div>
     </div>
   );

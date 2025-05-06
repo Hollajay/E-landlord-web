@@ -10,12 +10,12 @@ import { SecureScreen } from "./SecureScreen"
 
 export const Home = () => {
   return (
-    <div className="relative text-[3AA6B9] ">
+    <div className="relative text-[3AA6B9] overflow-hidden">
         <Nav/>
         <Hero/>
         <Decription1/>  
         <SecureScreen />   
-        <Decription2/>   
+        <Decription2/>    
         <DownloadScreen/>
         <FAQ/>
         <Footer/>

@@ -7,7 +7,7 @@ import appleplay from "../assets/icon/apple (3).svg";
 
 export const Footer = () => {
   return (
-    <div className="py-12 md:px-12 px-4 w-full bg-[#006A71] relative lg:mt-48 mt-44 lg:rounded-t-[50px]">
+    <div className="py-12 md:px-12 px-4 w-full bg-[#006A71] relative lg:mt-48 mt-44 lg:rounded-t-[50px] ">
       <div className="absolute lg:top-[-35%] top-[-17%] left-0 w-full ">
         <Newletter />
       </div>
@@ -86,6 +86,8 @@ export const Footer = () => {
           © 2025 E-Landlord. All rights reserved.
         </p>
       </div>
+
+ 
     </div>
   );
 };

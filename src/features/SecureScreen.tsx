@@ -3,14 +3,10 @@ import descripImg from "../assets/images/3dimg (5).png";
 
 export const SecureScreen = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-between   bg-[#9ACBD0]">
-      <div className="w-1/2 hidden lg:flex items-center justify-center">
-        <div className="w-full flex items-center justify-center">
-          <img className="w-2/3" src={descripImg} alt="description" />
-        </div>
-      </div>
+    <div className="flex lg:flex-row flex-col justify-between   bg-[#9ACBD0] lg:py-4 z-10">
+    
 
-      <div className="lg:w-1/2 flex-col flex items-center justify-center gap-8 p-4">
+      <div className="lg:w-1/2 flex-col flex items-center justify-center gap-8 p-4 lg:px-32">
         <h1 className="text-4xl font-bold text-[#006A71]">
           Seamless In-App Payment Experience
         </h1>
@@ -26,7 +22,12 @@ export const SecureScreen = () => {
 
         <div className="flex justify-center lg:justify-start w-full space-x-4">
           <Button bgVariant="secondary" title="learn more >>" />
-          {/* <Button bgVariant="secondary" title="sign up " /> */}
+        </div>
+      </div>
+
+      <div className="w-1/2 hidden lg:flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
+          <img className="w-2/3" src={descripImg} alt="description" />
         </div>
       </div>
     </div>

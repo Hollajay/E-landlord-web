@@ -1,6 +1,9 @@
-import { Button } from "../components/Button";
-// import heroimg from "../assets/images/house-8571836_1280.jpg";
+
 import heroimg from "../assets/images/img1 (1).png";
+import googleplay from "../assets/icon/google-play (1).svg";
+import appleplay from "../assets/icon/apple (3).svg";
+
+
 
 export const Hero = () => {
   return (
@@ -16,10 +19,27 @@ export const Hero = () => {
           our app today and start your journey to your next home!
           
         </p>
-        <div className="w-full space-x-4">
-          <Button bgVariant="secondary" title="Download" />
-          <Button bgVariant="outline" title="Learn more" />
-        </div>
+        <div className=" flex md:flex-row flex-col w-full items-start justify-start gap-4 text-[#fff]">
+        <button className="bg-[#000] flex items-center gap-2 justify-center p-2 rounded-lg h-14 ">
+          <div className="">
+            <img className="w-9" src={googleplay} alt="googleicon" />
+          </div>
+
+          <div className="flex flex-col items-start ">
+            <p className="text-[10px]">GET IT ON</p>
+            <p className="text-2xl">Google Play</p>
+          </div>
+        </button>
+        <button className="bg-[#000] flex items-center gap-2 h-14 justify-center p-2 rounded-lg ">
+          <div className="">
+            <img className="w-12" src={appleplay} alt="googleicon" />
+          </div>
+          <div className="flex flex-col items-start">
+            <p className="text-[12px]">Download on the</p>
+            <p className="text-2xl">App Store</p>
+          </div>
+        </button>
+      </div>
       </div>
 
       <div className=" lg:w-1/2 flex">
@@ -31,6 +51,7 @@ export const Hero = () => {
           />
         </div>
       </div>
+    
     </div>
   );
 };
