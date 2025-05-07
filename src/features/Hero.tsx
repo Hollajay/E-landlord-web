@@ -25,18 +25,18 @@ export const Hero = () => {
             <img className="w-9" src={googleplay} alt="googleicon" />
           </div>
 
-          <div className="flex flex-col items-start ">
-            <p className="text-[10px]">GET IT ON</p>
-            <p className="text-2xl">Google Play</p>
+          <div className="flex flex-col gap-5  items-start justify-center py-2 ">
+            <p className="text-[10px] leading-0">GET IT ON</p>
+            <p className="text-2xl leading-0">Google Play</p>
           </div>
         </button>
         <button className="bg-[#000] flex items-center gap-2 h-14 justify-center p-2 rounded-lg ">
           <div className="">
             <img className="w-12" src={appleplay} alt="googleicon" />
           </div>
-          <div className="flex flex-col items-start">
-            <p className="text-[12px]">Download on the</p>
-            <p className="text-2xl">App Store</p>
+          <div className="flex flex-col items-start gap-5 justify-center py-2">
+            <p className="text-[12px] leading-0">Download on the</p>
+            <p className="text-2xl leading-0">App Store</p>
           </div>
         </button>
       </div>

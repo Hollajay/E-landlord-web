@@ -10,8 +10,8 @@ export const Newletter = () => {
     
 
     <div className="flex flex-col gap-1  w-full ">
-      <h3 className="text-4xl font-bold">Stay Updated with E-Landlord</h3>
-      <p className="">
+      <h3 className="md:text-4xl text-2xl font-bold md-text-left text-center md:text-left">Stay Updated with E-Landlord</h3>
+      <p className="text-center md:text-left">
       Join our newsletter for the latest updates, tips, and exclusive offers on rentals.
       </p>
     </div>

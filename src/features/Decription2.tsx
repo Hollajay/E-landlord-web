@@ -11,7 +11,7 @@ export const Decription2 = () => {
       <div><img src={descripImg} alt="description" /></div>
       </div>
       <div className="lg:w-1/2 p-4 flex flex-col justify-center items-center gap-4">
-        <h1 className="text-4xl font-bold text-[#006A71] text-center">Seamless Communication with Landlords: Chat or Call Anytime</h1>
+        <h1 className="md:text-4xl text-3xl font-bold text-[#006A71] text-center">Seamless Communication with Landlords: Chat or Call Anytime</h1>
         <p className="text-[#006A71]">
           Connect directly with landlords through our in-app chat or call
           feature. Get your questions answered instantly and make informed

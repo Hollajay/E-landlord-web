@@ -1,48 +1,47 @@
-import icon1 from "../assets/icon/undraw (2).svg";
-import icon2 from "../assets/icon/undraw5.svg";
-import icon3 from "../assets/icon/undraw (9).svg";
+
 import bgIcon from "../assets/images/3dimg (3).png";
 import Icon from "../constant/icons/Icon";
+import { SlCompass } from "react-icons/sl";
 import "../styles/bounce.css";
+import { IoPricetagsOutline } from "react-icons/io5";
+import { GrMapLocation } from "react-icons/gr";
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { BsHouseHeart } from "react-icons/bs";
+import { JSX } from "react";
+
 interface rentalProps {
-  icon: string;
-  title: string;
+  icon: JSX.Element;
   content: string;
 }
 
 export const Decription1 = () => {
   const perfectRental: rentalProps[] = [
     {
-      icon: icon1,
-      title: "Customize you serach experience",
-      content: "Select your ideal min and  max price",
+      icon: <IoPricetagsOutline size={40} color="#006A71"/>,
+      content: "Easily set your preferred minimum and maximum price range to match your rental budget.",
     },
     {
-      icon: icon2,
-      title: "Choose your location with confidence",
-      content: "Filter by state and city to find rentals",
+      icon: <GrMapLocation size={40} color="#006A71"/>,
+      content: "Quickly filter rental listings by selecting a specific state and city for targeted results.",
     },
     {
-      icon: icon3,
-      title: "Effortless Navigation for your Rental journey",
-      content: "Our user-interface make search",
+      icon: <SlCompass size={40} color="#006A71"/>,
+      content: "Our interface allows you to search, explore, and discover properties with simple filters.",
     },
     {
-      icon: icon3,
-      title: "Effortless Navigation for your Rental journey",
-      content: "Our user-interface make search",
+      icon: <RiVerifiedBadgeLine size={40} color="#006A71"/>,
+      content: "Only verified listings with real-time availability, clear photos, and full details are shown.",
     },
     {
-      icon: icon3,
-      title: "Effortless Navigation for your Rental journey",
-      content: "Our user-interface make search",
+      icon: <BsHouseHeart size={40} color="#006A71"/>,
+      content: "Save your favorite rentals, view saved searches, and access them easily at any time.",
     },
   ];
 
   return (
     <div className="relative w-full flex flex-col lg:my-20 py-20 items-center justify-center gap-8 ">
       <div className="flex items-center flex-col lg:w-2/4 gap-4">
-        <h1 className="font-bold text-4xl text-[#006A71] text-center">
+        <h1 className="font-bold md:text-4xl text-3xl text-[#006A71] text-center">
           Find Your Perfect Rental with Ease
         </h1>
         <p className="text-center text-[#006A71]">
@@ -65,12 +64,12 @@ export const Decription1 = () => {
                 key={index}
                 className=" flex items-center even:justify-end  w-full "
               >
-                <div className="bg-[#006A71] lg:h-24 h-20 rounded-l-full   w-[30%] flex justify-center items-center">
-                  <img className="h-16 w-16" src={data.icon} alt="icons" />
+                <div className=" bg-[#9ACBD0] lg:h-24 h-20 rounded-l-full   w-[25%] flex justify-center items-center">
+                 {data.icon}
                 </div>
 
-                <div className="flex items-center justify-center p-2 flex-col  w-[60%] lg:h-24 h-20 bg-[#9ACBD0] rounded-r-full">
-                  <h2 className=" font-semibold text-center ">{data.title}</h2>
+                <div className="flex items-center justify-center p-2 pr-3 flex-col  w-[70%] lg:h-24 h-20 bg-[#006A71]  rounded-r-full">
+                  <h2 className="text-sm md:text-lg font-semibold text-center md:leading-5 leading-4.5 text-[#fff] ">{data.content}</h2>
                 </div>
               </div>
             ))}
@@ -83,7 +82,7 @@ export const Decription1 = () => {
       </div>
 
       <div className="absolute bottom-[-45%] left-0 z-0 ">
-        <Icon type="looper" fill="#ffc90566"/>
+        <Icon type="looper" fill="#efefef"/>
       </div>
     </div>
   );

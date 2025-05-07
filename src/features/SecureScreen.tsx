@@ -6,8 +6,8 @@ export const SecureScreen = () => {
     <div className="flex lg:flex-row flex-col justify-between   bg-[#9ACBD0] lg:py-4 z-10">
     
 
-      <div className="lg:w-1/2 flex-col flex items-center justify-center gap-8 p-4 lg:px-32">
-        <h1 className="text-4xl font-bold text-[#006A71]">
+      <div className="lg:w-1/2 flex-col flex items-center justify-center gap-8 p-4 lg:px-32 z-20">
+        <h1 className="md:text-4xl text-3xl font-bold text-[#006A71] text-center">
           Seamless In-App Payment Experience
         </h1>
         <p className="text-[#006A71]">

@@ -58,7 +58,7 @@ export const FAQ = () => {
   return (
     <div className="px-6 py-10 space-y-7">
       <div>
-        <h1 className="text-4xl font-bold text-[#006A71]">FAQs</h1>
+        <h1 className="md:text-4xl text-3xl font-bold text-[#ff9d02]">FAQs</h1>
         <p className="text-lg text-[#006A71]">
           Find answers to common questions about using the E-Landlord app
           effortlessly
