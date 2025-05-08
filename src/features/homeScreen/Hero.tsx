@@ -1,7 +1,7 @@
 
-import heroimg from "../assets/images/img1 (1).png";
-import googleplay from "../assets/icon/google-play (1).svg";
-import appleplay from "../assets/icon/apple (3).svg";
+import heroimg from "../../assets/images/img1 (1).png";
+import googleplay from "../../assets/icon/google-play (1).svg";
+import appleplay from "../../assets/icon/apple (3).svg";
 
 
 

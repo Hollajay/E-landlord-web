@@ -1,9 +1,14 @@
-import Icon from "../constant/icons/Icon";
-import { FooterSocial } from "../constant/props/footerProps";
+
+import {
+  CompanyProps,
+  FooterSocial,
+  ResourcesProps,
+} from "../../constant/props/footerProps";
 import { Newletter } from "./Newletter";
-import "../styles/bounce.css";
-import googleplay from "../assets/icon/google-play (1).svg";
-import appleplay from "../assets/icon/apple (3).svg";
+import "../../styles/bounce.css";
+import googleplay from "../../assets/icon/google-play (1).svg";
+import appleplay from "../../assets/icon/apple (3).svg";
+import Icon from "../../constant/icons/Icon";
 
 export const Footer = () => {
   return (
@@ -12,10 +17,10 @@ export const Footer = () => {
         <Newletter />
       </div>
 
-      <div className=" grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 w-full py-14 ">
+      <div className=" grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4  py-14 ">
         <div className="flex flex-col gap-4">
           <div>
-            <Icon type="logo" fill="#9ACBD0" />
+            <Icon type="logo" fill="#ff9d02" />
           </div>
           <p className="text-[#9ACBD0]">
             A trusted platform for finding the perfect apartment or house,
@@ -25,23 +30,29 @@ export const Footer = () => {
           <p></p>
         </div>
 
-        <div className="flex lg:justify-center">
-          <ul className="text-lg text-[#9ACBD0] space-y-3">
-            <li>About us</li>
-            <li>Contact Us</li>
-            <li>Help Center</li>
-            <li>Blog post</li>
-            <li>Careers</li>
+        <div className="flex flex-col md:items-center items-start gap-4">
+          <p className="text-2xl font-bold footerAfter text-[#9ACBD0]">
+            Company
+          </p>
+          <ul className="text-lg font-semibold text-[#9ACBD0] space-y-3">
+            {CompanyProps.map((data, index) => (
+              <li key={index} className="hover:text-[#ff9d02]">
+                <a href={data.link}>{data.list}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
-        <div className="flex lg:justify-center">
-          <ul className="text-lg text-[#9ACBD0] space-y-3">
-            <li>FAQ</li>
-            <li>support</li>
-            <li>Testimonials</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
+        <div className="flex  flex-col  md:items-center items-start   gap-4">
+          <p className="text-2xl font-bold footerAfter text-[#9ACBD0]">
+            Resources
+          </p>
+          <ul className="text-[20px] font-semibold text-[#9ACBD0] transition-colors  space-y-3 ">
+            {ResourcesProps.map((data, index) => (
+              <li key={index} className="hover:text-[#ff9d02]">
+                <a href={data.link}>{data.list}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -86,8 +97,6 @@ export const Footer = () => {
           © 2025 E-Landlord. All rights reserved.
         </p>
       </div>
-
- 
     </div>
   );
 };

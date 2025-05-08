@@ -1,13 +1,13 @@
+import bgIcon from "../../assets/images/3dimg (3).png";
 
-import bgIcon from "../assets/images/3dimg (3).png";
-import Icon from "../constant/icons/Icon";
 import { SlCompass } from "react-icons/sl";
-import "../styles/bounce.css";
+import "../../styles/bounce.css";
 import { IoPricetagsOutline } from "react-icons/io5";
 import { GrMapLocation } from "react-icons/gr";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
 import { BsHouseHeart } from "react-icons/bs";
 import { JSX } from "react";
+import Icon from "../../constant/icons/Icon";
 
 interface rentalProps {
   icon: JSX.Element;

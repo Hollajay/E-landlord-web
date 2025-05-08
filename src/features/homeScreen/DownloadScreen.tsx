@@ -1,12 +1,12 @@
-import googleplay from "../assets/icon/google-play (1).svg";
-import appleplay from "../assets/icon/apple (3).svg";
-import Icon from "../constant/icons/Icon";
+import googleplay from "../../assets/icon/google-play (1).svg";
+import appleplay from "../../assets/icon/apple (3).svg";
+import Icon from "../../constant/icons/Icon";
 
 export const DownloadScreen = () => {
   return (
     <div className="bg-[#9ACBD0]  lg:m-6 m-4 lg:py-24 lg:px-8 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 relative 
     ">
-      <h1 className="md:text-4xl text-3xl font-bold text-[#006A71] text-center z-20">
+      <h1 className="md:text-4xl text-2xl font-bold text-[#006A71] text-center z-20">
         Download the E-landlord App
       </h1>
       <p className="text-[#006A71] text-center z-20">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
-import '../styles/bounce.css'
+import '../../styles/bounce.css'
 
 interface FaqProps {
   id: number;

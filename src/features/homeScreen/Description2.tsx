@@ -1,8 +1,8 @@
-import descripImg from '../assets/images/3dimg (4).png'
+import descripImg from '../../assets/images/3dimg (4).png'
 import { LuFolderKey } from "react-icons/lu";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
-import "../styles/bounce.css";
-import Icon from "../constant/icons/Icon";
+import "../../styles/bounce.css";
+import Icon from "../../constant/icons/Icon";
 export const Decription2 = () => {
   return (
     <div className="w-full  flex lg:flex-row flex-col lg:p-6  lg:py-28 py-10 relative">

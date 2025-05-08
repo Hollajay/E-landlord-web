@@ -1,5 +1,6 @@
-import { Button } from "../components/Button";
-import descripImg from "../assets/images/3dimg (5).png";
+
+import { Button } from "../../components/common/Button";
+import descripImg from "../../assets/images/3dimg (5).png";
 
 export const SecureScreen = () => {
   return (
